@@ -1,11 +1,8 @@
 import Link from "next/link";
 
-import { CreatePost } from "@sse/app/_components/create-post";
 import { api } from "@sse/trpc/server";
 
-export default async function Home() {
-  const hello = await api.post.hello.query({ text: "from tRPC" });
-
+export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-black text-white">
       <div>

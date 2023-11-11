@@ -1,11 +1,11 @@
 import "@sse/styles/globals.css";
 
-import { Inter } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
 import { cookies } from "next/headers";
 
 import { TRPCReactProvider } from "@sse/trpc/react";
 
-const inter = Inter({
+const inter = Roboto_Mono({
   subsets: ["latin"],
   variable: "--font-sans",
 });
